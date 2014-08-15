@@ -1,0 +1,31 @@
+erweiterungen:
+- sub-konfigurationen; in factory abbacken, einfach mit id.subId appenden
+- bufferedConfiguration fertig machen
+- testen testen testen
+
+konzept:
+- eine konfiguration wird per übergabe eine string-parameters "config-id" <id> geladen; das kann dann ein package sein oder was anderes
+- dort drunter sind dann einzelne string-konfigurationsschlüssel <key>
+- werteumrechnung schon inklusive
+- suchhierarchie von konfigurationen für <id><key>
+  - system-property/übergabeparameter/sonstiges in <id>.<key>
+  [- registry-eintrag (???)]
+  - properties file in einem folder, wenn ein systemproperty den pfad angibt: filename <id>.properties für alle files
+  - properties file auf dem aktuellen pfad
+  - properties files per resource loading
+  - properties file auf dem classpath
+
+
+-- listing properties --
+user.dir=C:\zwb\prog\Eclipse-Workspace_[Java]\...
+java.io.tmpdir=C:\Users\foo\AppData\Local\Temp\
+user.home=C:\Users\foo
+java.class.path=C:\zwb\prog\Eclipse-Workspace_[Java]\...
+
+-- listing env properties --
+{USERPROFILE=C:\Users\foo
+ LOCALAPPDATA=C:\Users\foo\AppData\Local
+ PUBLIC=C:\Users\Public
+ APPDATA=C:\Users\foo\AppData\Roaming}
+
+
