@@ -41,9 +41,10 @@ public class ConfigurationFactory
 		}
 	}
 
-	private static String appendSubConfiguration(String id, String sub)
-	{
-		if(id)
-	}
+	/** here TODO: what should be done here? */
+//	private static String appendSubConfiguration(String id, String sub)
+//	{
+//		if(id)
+//	}
 	
 }
