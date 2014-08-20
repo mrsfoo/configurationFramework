@@ -138,7 +138,7 @@ public class ConfigurationAccessor
 	{
 		try
 		{
-			return getString(key, id);
+			return getString(id, key);
 		}
 		catch (NoConfigurationException e)
 		{
@@ -150,7 +150,7 @@ public class ConfigurationAccessor
 	{
 		try
 		{
-			return getInt(key, id);
+			return getInt(id, key);
 		}
 		catch (NoConfigurationException | MalformedValueException e)
 		{
@@ -162,7 +162,7 @@ public class ConfigurationAccessor
 	{
 		try
 		{
-			return getDouble(key, id);
+			return getDouble(id, key);
 		}
 		catch (NoConfigurationException | MalformedValueException e)
 		{
@@ -174,7 +174,7 @@ public class ConfigurationAccessor
 	{
 		try
 		{
-			return getBool(key, id);
+			return getBool(id, key);
 		}
 		catch (NoConfigurationException | MalformedValueException e)
 		{
@@ -186,7 +186,7 @@ public class ConfigurationAccessor
 	{
 		try
 		{
-			return getListOfStrings(key, id);
+			return getListOfStrings(id, key);
 		}
 		catch (NoConfigurationException e)
 		{
